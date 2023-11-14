@@ -26,10 +26,17 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import jobme from "./company/jobme.png";
+import ncit from "./ncit.png";
+import school from "./school.png";
+import unity2 from "./unity2.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import photoshop from "./photoshop.png";
+import jobmesite from "./jobmesite.png"
+import recommendhostel from "./recommendhostel.png"
 
 export {
   logo,
@@ -56,9 +63,16 @@ export {
   threejs,
   meta,
   shopify,
+  jobme,
   starbucks,
   tesla,
   carrent,
   jobit,
+  school,
+  ncit,
+  unity2,
   tripguide,
+  photoshop,
+  jobmesite,
+  recommendhostel,
 };

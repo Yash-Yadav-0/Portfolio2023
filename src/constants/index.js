@@ -20,10 +20,17 @@ import {
     starbucks,
     tesla,
     shopify,
+    jobme,
+    ncit,
+    school,
+    unity2,
     carrent,
     jobit,
     tripguide,
     threejs,
+    photoshop,
+    jobmesite,
+    recommendhostel
   } from "../assets";
   
   export const navLinks = [
@@ -86,10 +93,6 @@ import {
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
       name: "Tailwind CSS",
       icon: tailwind,
     },
@@ -102,74 +105,62 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "git",
+      name: "Git",
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
+      name:"Photoshop",
+      icon:photoshop,
+    }
   ];
   
   const experiences = [
     {
       title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      company_name: "",
+      icon: jobme,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "June 2023 - September 2023",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Understanding of modern javascript, ES6 ",
+        "Knowledge of UI libraries like Material UI, Ant design etc",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+      title:"Unity Developer",
+      company_name:"",
+      icon: unity2,
+      iconBg:"#b4c5d9",
+      date:"March 2022-April 2022",
+      points:[
+        "Designing, developing, and maintaining immersive gaming experiences using Unity3D and related technologies.",
+        "Implementing responsive and scalable game mechanics while ensuring optimal performance across different platforms.",
+        "Proficient in C# programming language and applying modern programming principles to game development.",
+        "Familiarity with 3D mathematics, physics, and graphics to create realistic and visually appealing game environments.",
+      ]
+    },
+    {
+      title:"Capital College and Research Center",
+      company_name:"",
+      icon:school,
+      iconBg:"#75c4b8",
+      date:"2014-2016",
+      points:[
+        "+2 Science Stream (Biology and Math)"
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+      title:"Nepal College of Information Technology",
+      company_name:"",
+      icon:ncit,
+      iconBg:"#383E56",
+      date:"2018-2023",
+      points:[
+        "Bachelor in Computer Engineering"
       ],
     },
   ];
@@ -203,9 +194,30 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "JobMe",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "MERN stack web app simplifying hiring household service providers, like carpenters, plumbers, and electricians, for enhanced user convenience.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: jobmesite,
+      source_code_link: "https://github.com/Yash-Yadav-0/Job_Me",
+    },
+    {
+      name: "Hostel Finder",
+      description:
+        "MERN stack app streamlining hostel search with a user-friendly interface for effortless booking and accommodation discovery.",
       tags: [
         {
           name: "react",
@@ -220,50 +232,25 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
       image: jobit,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "Hostel Recommendation System",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "The Hostel Finder web app's Python-based recommendation system intelligently suggests hostels by considering factors such as proximity to selected hostels, price range, ratings, and available facilities for an enhanced user experience.",
       tags: [
         {
-          name: "nextjs",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "machine learning",
           color: "green-text-gradient",
         },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: recommendhostel,
+      source_code_link: "https://github.com/Yash-Yadav-0/Recommendation-Hostel",
     },
   ];
   
