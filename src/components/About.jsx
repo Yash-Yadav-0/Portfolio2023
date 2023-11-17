@@ -53,6 +53,9 @@ const About = () => {
     technical prowess and contributions to innovation. Explore my projects and 
     experiences to get a glimpse of my journey in the world of technology.
     </motion.p>
+    {/* <a href={cv} download="cv">
+      <Button variant='outlined' className='transition ease-in-out delay-150 hover:scale-110 duration-300' type="button" data-aos="fade-right"> Download cv </Button>
+    </a> */}
     <div className='mt-20 flex flex-wrap gap-10'>
       {services.map((service,index)=>(
         <ServiceCard key={service.title} index={index} {...service} />
