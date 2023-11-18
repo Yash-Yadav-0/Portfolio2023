@@ -9,6 +9,14 @@ const Navbar = () => {
   const [active, setActive] =useState("");
   const [toggle, setToggle] =useState(false);
 
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    section.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  };
+
 
   return (
     <nav
@@ -37,7 +45,10 @@ const Navbar = () => {
               className={`${
                 active === Link.title ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(Link.title)}
+              onClick={() => {
+                setActive(Link.title);
+                scrollToSection(Link.id);
+                }}
             >
               <a href={`#${Link.id}`}>{Link.title}</a>
             </li>
@@ -60,6 +71,7 @@ const Navbar = () => {
               onClick={() =>{
                 setToggle(!toggle);
                 setActive(Link.title);
+                scrollToSection(Link.id);
               }}
             >
               <a href={`#${Link.id}`}>{Link.title}</a>

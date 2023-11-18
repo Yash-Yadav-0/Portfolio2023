@@ -35,10 +35,6 @@ import {
   
   export const navLinks = [
     {
-      id: "home",
-      title: "Home",
-    },
-    {
       id: "about",
       title: "About",
     },
@@ -55,6 +51,8 @@ import {
       title: "Contact",
     },
   ];
+
+  
   
   const services = [
     {
@@ -152,16 +150,6 @@ import {
       ]
     },
     {
-      title:"Capital College and Research Center",
-      company_name:"",
-      icon:school,
-      iconBg:"#75c4b8",
-      date:"2014-2016",
-      points:[
-        "+2 Science Stream (Biology and Math)"
-      ],
-    },
-    {
       title:"Nepal College of Information Technology",
       company_name:"",
       icon:ncit,
@@ -171,6 +159,17 @@ import {
         "Bachelor in Computer Engineering"
       ],
     },
+    {
+      title:"Capital College and Research Center",
+      company_name:"",
+      icon:school,
+      iconBg:"#75c4b8",
+      date:"2014-2016",
+      points:[
+        "+2 Science Stream (Biology and Math)"
+      ],
+    },
+    
   ];
   
   const testimonials = [
