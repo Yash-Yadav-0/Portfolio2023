@@ -30,7 +30,8 @@ import {
     threejs,
     photoshop,
     jobmesite,
-    recommendhostel
+    recommendhostel,
+    cv,
   } from "../assets";
   
   export const navLinks = [

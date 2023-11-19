@@ -37,6 +37,7 @@ import tripguide from "./tripguide.png";
 import photoshop from "./photoshop.png";
 import jobmesite from "./jobmesite.png"
 import recommendhostel from "./recommendhostel.png"
+import cv from "./cv.png"
 
 export {
   logo,
@@ -75,4 +76,5 @@ export {
   photoshop,
   jobmesite,
   recommendhostel,
+  cv,
 };
