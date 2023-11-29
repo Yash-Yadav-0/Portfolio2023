@@ -32,6 +32,7 @@ import {
     jobmesite,
     recommendhostel,
     cv,
+    hostelfindersite,
   } from "../assets";
   
   export const navLinks = [
@@ -240,7 +241,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: "",
+      image: hostelfindersite,
       source_code_link: "https://github.com/SahashChaudhary/HostelFinder",
     },
     {

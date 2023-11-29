@@ -1,12 +1,12 @@
-import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { useState, useRef } from "react";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-
+import CustomAlert from '../hoc/CustomAlert';
 
 const Contact = () => {
   const formRef = useRef();
@@ -17,6 +17,8 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [isAlertVisible, setIsAlertVisible] = useState(false);
+  const [alertMessage, setAlertMessage] = useState('');
 
   const handleChange = (e) => {
     const { target } = e;
@@ -28,14 +30,29 @@ const Contact = () => {
     });
   };
 
+  const showAlert = (message) => {
+    setAlertMessage(message);
+    setIsAlertVisible(true);
+  };
+
+  const closeAlert = () => {
+    setIsAlertVisible(false);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!form.name || !form.email || !form.message) {
+      showAlert("Please fill in all fields.");
+      return;
+    }
+
     setLoading(true);
 
     emailjs
       .send(
         'service_37bxokq',
-        'template_04ivqsv',
+        'template_0sku1mm',
         {
           from_name: form.name,
           to_name: "Yash Yadav",
@@ -48,7 +65,7 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          showAlert("Thank you. I will get back to you as soon as possible.");
 
           setForm({
             name: "",
@@ -60,15 +77,13 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          showAlert("Ahh, something went wrong. Please try again.");
         }
       );
   };
 
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
+    <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
@@ -76,11 +91,7 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
-        >
+        <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col gap-8'>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
             <input
@@ -117,7 +128,7 @@ const Contact = () => {
 
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            className='bg-tertiary-transition py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
           >
             {loading ? "Sending..." : "Send"}
           </button>
@@ -130,6 +141,8 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+
+      {isAlertVisible && <CustomAlert message={alertMessage} onClose={closeAlert} />}
     </div>
   );
 };

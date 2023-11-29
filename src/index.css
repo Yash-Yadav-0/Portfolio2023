@@ -146,6 +146,138 @@
   animation: mulShdSpin 1.1s infinite ease;
   transform: translateZ(0);
 }
+/* alert -styles */
+.custom-alert {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  height: auto;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 20px;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+.custom-alert p {
+  margin: 0 0 10px;
+}
+
+
+.custom-alert .alert-button {
+  --color: #145091;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border: 3px solid var(--color);
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  position: relative;
+}
+
+.custom-alert .alert-button::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  inset: 0;
+  scale: 0 1;
+
+
+
+
+  transform-origin: right;
+  transition: scale 450ms;
+}
+
+.custom-alert .alert-button:hover::after,
+.custom-alert .alert-button:focus-visible::after {
+  transform-origin: left;
+  scale: 1 1;
+}
+
+/* Shared button transition effect */
+.button-transition,
+.custom-alert .alert-button,
+.bg-tertiary-transition,
+.send-button-transition {
+  --color: #145091;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border: 3px solid var(--color);
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  position: relative;
+}
+
+.button-transition::after,
+.custom-alert .alert-button::after,
+.bg-tertiary-transition::after,
+.send-button-transition::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  inset: 0;
+  scale: 0 1;
+  transform-origin: right;
+  transition: scale 450ms;
+}
+
+.button-transition:hover::after,
+.button-transition:focus-visible::after,
+.custom-alert .alert-button:hover::after,
+.custom-alert .alert-button:focus-visible::after,
+.bg-tertiary-transition:hover::after,
+.bg-tertiary-transition:focus-visible::after,
+.send-button-transition:hover::after,
+.send-button-transition:focus-visible::after {
+  transform-origin: left;
+  scale: 1 1;
+}
+
+/* Alert styles */
+.custom-alert {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  height: auto;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 20px;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+.custom-alert p {
+  margin: 0 0 10px;
+}
+
 
 @keyframes mulShdSpin {
   0%,

@@ -38,6 +38,7 @@ import photoshop from "./photoshop.png";
 import jobmesite from "./jobmesite.png"
 import recommendhostel from "./recommendhostel.png"
 import cv from "./cv.png"
+import hostelfindersite from "./hostelfindersite.png"
 
 export {
   logo,
@@ -77,4 +78,5 @@ export {
   jobmesite,
   recommendhostel,
   cv,
+  hostelfindersite,
 };
