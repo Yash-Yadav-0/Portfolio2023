@@ -1,7 +1,6 @@
+import { color } from "framer-motion";
 import {
     mobile,
-    backend,
-    creator,
     unityDev,
     web,
     javascript,
@@ -9,30 +8,27 @@ import {
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     mongodb,
     git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
     jobme,
     ncit,
     school,
     unity2,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
     photoshop,
     jobmesite,
     recommendhostel,
-    cv,
+    dotnet,
+    csharp,
     hostelfindersite,
+    aloilogo,
+    rabbitmqlogo,
+    postmanlogo,
+    redislogo,
+    sasslogo,
+    fintechlogo,
+    cleanarch,
   } from "../assets";
   
   export const navLinks = [
@@ -58,21 +54,17 @@ import {
   
   const services = [
     {
+      title: "Backend Developer",
+      icon: dotnet,
+    },
+    {
       title: "Frontend Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "React Developer",
       icon: mobile,
     },
-    // {
-    //   title: "Backend Developer",
-    //   icon: backend,
-    // },
-    // {
-    //   title: "Content Creator",
-    //   icon: creator,
-    // },
     {
       title:"Unity Developer",
       icon:unityDev,
@@ -105,6 +97,10 @@ import {
       icon: tailwind,
     },
     {
+      name:"SASS",
+      icon:sasslogo,
+    },
+    {
       name: "Node JS",
       icon: nodejs,
     },
@@ -119,10 +115,49 @@ import {
     {
       name:"Photoshop",
       icon:photoshop,
+    },
+    {
+      name:"C#",
+      icon:csharp,
+    },
+    {
+      name:"RabbitMQ",
+      icon: rabbitmqlogo,
+    },
+    {
+      name:"Postman",
+      icon:postmanlogo,
+    },
+    {
+      name:"Redis",
+      icon: redislogo,
     }
   ];
   
   const experiences = [
+    {
+      title: ".Net Intern",
+      company_name:"Fintect Solution Pvt. Ltd.",
+      icon: fintechlogo,
+      iconBg: "#f0ffff",
+      date: "June 2024 - Present",
+      points: [
+        "Ongoing..."
+      ]
+    },
+    {
+      title: ".Net Bootcamp",
+      company_name:"Aloi Private Limited",
+      icon: aloilogo,
+      iconBg: "#f0ffff",
+      date: "Feb 2024 - April 2024",
+      points: [
+        "Developed robust and scalable web applications using ASP.NET, focusing on RESTful API development and adhering to industry best practices.",
+        "Led the development of API functionalities, including HTTP methods, validation, and efficient data retrieval and manipulation techniques.",
+        "Collaborated with team members using version control systems like Git to organize modifications and assign tasks.",
+        "Orchestrated seamless deployment and cloud integration strategies, utilizing Azure and AWS platforms for efficient application hosting and configuration.",
+      ]
+    },
     {
       title: "React.js Developer",
       company_name: "",
@@ -202,6 +237,95 @@ import {
   ];
   
   const projects = [
+    {
+      name: "Clean Architecture Project",
+      description:"This project follows Clean Architecture principles to ensure a modular, maintainable, and testable codebase, integrating distinct layers for application logic, domain entities, and infrastructure services. It provides a robust structure for scalable development with .NET.",
+      tags:[
+        {
+          name:"asp.Net",
+          color:"blue-text-gradient",
+        },
+        {
+          name:"postgreSql",
+          color:"green-text-gradient",
+        },
+        {
+          name:"hangfire",
+          color:"pink-text-gradient",
+        },
+        {
+          name:"Serilog",
+          color:"blue-text-gradient",
+        },
+        {
+          name:"fluentValidation",
+          color:"green-text-gradient",
+        },
+      ],
+      image: cleanarch,
+      source_code_link:"https://github.com/Yash-Yadav-0/CleanArchitecture",
+    },
+    {
+      name: "BankingSystem",
+      description:"This project aims to develop a compact yet efficient bank system, providing essential functionalities. Built using  ASP.NET, C# and React this application delivers a robust platform for banking operations.[FullStack]",
+      tags:[
+        {
+          name:` C#`,
+          color:"pink-text-gradient",
+        },
+        {
+          name:"asp.Net",
+          color:"blue-text-gradient",
+        },
+        {
+          name:"postgreSql",
+          color:"green-text-gradient",
+        },
+        {
+          name:"react",
+          color:"blue-text-gradient",
+        },
+        {
+          name:"Scss",
+          color:"pink-text-gradient",
+        },
+      ],
+      image: "",
+      source_code_link:"https://github.com/Yash-Yadav-0/BankingSystem-UI",
+    },
+    {
+      name: "ChatApp_SignalR",
+      description:"real-time applications by building a cutting-edge chat application using .NET SignalR and React.[FullStack]",
+      tags:[
+        {
+          name:` C#`,
+          color:"pink-text-gradient",
+        },
+        {
+          name:"asp.Net",
+          color:"blue-text-gradient",
+        },
+        {
+          name:"signalR",
+          color:"pink-text-gradient",
+        },
+        {
+          name:"react",
+          color:"blue-text-gradient",
+        },
+        {
+          name:"bootstrap",
+          color:"green-text-gradient",
+        },
+        {
+          name:"antdesign",
+          color:"green-text-gradient",
+        },
+        
+      ],
+      image: "",
+      source_code_link:"https://github.com/Yash-Yadav-0/ChatApp_Signalr",
+    },
     {
       name: "JobMe",
       description:

@@ -39,6 +39,15 @@ import jobmesite from "./jobmesite.png"
 import recommendhostel from "./recommendhostel.png"
 import cv from "./cv.png"
 import hostelfindersite from "./hostelfindersite.png"
+import dotnet from "./dotnet.png"
+import csharp from "./csharp.png"
+import aloilogo from "./aloilogo.png"
+import rabbitmqlogo from "./rabbitmqlogo.png"
+import redislogo from "./redislogo.png"
+import postmanlogo from "./postmanlogo.png"
+import sasslogo from "./sasslogo.png"
+import fintechlogo from "./FintechLogo.png"
+import cleanarch from './cleanarch.png'
 
 export {
   logo,
@@ -79,4 +88,13 @@ export {
   recommendhostel,
   cv,
   hostelfindersite,
+  dotnet,
+  csharp,
+  aloilogo,
+  rabbitmqlogo,
+  postmanlogo,
+  redislogo,
+  sasslogo,
+  fintechlogo,
+  cleanarch
 };
