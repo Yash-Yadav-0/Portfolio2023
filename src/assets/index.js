@@ -48,6 +48,8 @@ import postmanlogo from "./postmanlogo.png"
 import sasslogo from "./sasslogo.png"
 import fintechlogo from "./FintechLogo.png"
 import cleanarch from './cleanarch.png'
+import nginx from './nginx.png'
+import postgre from './postgre.png'
 
 export {
   logo,
@@ -96,5 +98,7 @@ export {
   redislogo,
   sasslogo,
   fintechlogo,
-  cleanarch
+  cleanarch,
+  nginx,
+  postgre
 };

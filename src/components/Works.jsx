@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -65,6 +65,20 @@ const ProjectCard = ({
       </Tilt>
     </motion.div>
   );
+};
+
+ProjectCard.propTypes = {
+  index: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      color: PropTypes.string,
+    })
+  ).isRequired,
+  image: PropTypes.string,
+  source_code_link: PropTypes.string.isRequired,
 };
 
 const Works = () => {

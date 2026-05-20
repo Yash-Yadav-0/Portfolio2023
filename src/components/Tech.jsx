@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import 'animate.css';
 import Aos from 'aos';
 import { technologies } from '../constants';
@@ -9,7 +9,7 @@ export default function Tech() {
   }, []);
 
   return (
-    <div id='about'>
+    <div id='tech'>
       <style>
         {`
           @keyframes heartbeat {

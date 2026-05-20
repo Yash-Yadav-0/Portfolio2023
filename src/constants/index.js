@@ -1,4 +1,3 @@
-import { color } from "framer-motion";
 import {
     mobile,
     unityDev,
@@ -29,6 +28,8 @@ import {
     sasslogo,
     fintechlogo,
     cleanarch,
+    nginx,
+    postgre
   } from "../assets";
   
   export const navLinks = [
@@ -131,82 +132,92 @@ import {
     {
       name:"Redis",
       icon: redislogo,
+    },
+    {
+      name:"Nginx",
+      icon: nginx,
+    },
+    {
+      name:"Postgre",
+      icon: postgre,
     }
   ];
   
   const experiences = [
     {
-      title: ".Net Intern",
-      company_name:"Fintect Solution Pvt. Ltd.",
+      title: ".NET Developer",
+      company_name: "Fintech Solutions Pvt. Ltd.",
       icon: fintechlogo,
       iconBg: "#f0ffff",
-      date: "June 2024 - Present",
+      date: "Jun 2024 - Present",
       points: [
-        "Ongoing..."
-      ]
+        "Designed and shipped scalable ASP.NET Core REST APIs with validation, pagination, and standardized HTTP response contracts.",
+        "Applied Clean Architecture across Controller, Application, Domain, and Infrastructure layers, using CQRS and foundational DDD to keep fintech services maintainable.",
+        "Built backend services for international payout and remittance workflows, implementing idempotency keys, retry/fallback logic, and webhook & API Gateway callbacks.",
+        "Modeled and tuned PostgreSQL schemas, indexes, and stored procedures, writing performance-critical SQL alongside Entity Framework Core.",
+        "Implemented centralized exception handling, custom middleware, structured logging, input sanitization, RBAC, encryption, and audit logging to harden reliability and security.",
+        "Built event-driven components on AWS (Lambda, SQS/SNS, API Gateway) with background workers for asynchronous processing.",
+        "Owned CI/CD with GitHub Actions and Docker, deployed services on AWS, and supported production issues end-to-end - unit/integration testing, defect resolution, and on-call fixes.",
+      ],
     },
     {
-      title: ".Net Bootcamp",
-      company_name:"Aloi Private Limited",
+      title: ".NET Developer Intern",
+      company_name: "Aloi Global",
       icon: aloilogo,
       iconBg: "#f0ffff",
-      date: "Feb 2024 - April 2024",
+      date: "Feb 2024 - May 2024",
       points: [
-        "Developed robust and scalable web applications using ASP.NET, focusing on RESTful API development and adhering to industry best practices.",
-        "Led the development of API functionalities, including HTTP methods, validation, and efficient data retrieval and manipulation techniques.",
-        "Collaborated with team members using version control systems like Git to organize modifications and assign tasks.",
-        "Orchestrated seamless deployment and cloud integration strategies, utilizing Azure and AWS platforms for efficient application hosting and configuration.",
-      ]
+        "Built RESTful APIs in ASP.NET Core covering HTTP verbs, validation, and efficient data retrieval patterns.",
+        "Contributed across the full SDLC - requirement analysis, design, development, code reviews, and testing - within an Agile/Scrum team.",
+        "Practiced Git-based version control for collaborative development and clean task hand-offs.",
+        "Supported cloud deployment workflows on AWS and Azure, focusing on hosting and environment configuration.",
+      ],
     },
     {
       title: "React.js Developer",
       company_name: "",
       icon: jobme,
       iconBg: "#383E56",
-      date: "June 2023 - September 2023",
+      date: "Jun 2023 - Sep 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Understanding of modern javascript, ES6 ",
-        "Knowledge of UI libraries like Material UI, Ant design etc",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed and maintained web applications with React.js and modern JavaScript (ES6+).",
+        "Collaborated with designers, product managers, and engineers to ship user-facing features.",
+        "Implemented responsive UIs with cross-browser compatibility, leveraging libraries such as Material UI and Ant Design.",
+        "Participated in code reviews, providing and receiving constructive feedback to maintain code quality.",
       ],
     },
     {
-      title:"Unity Developer",
-      company_name:"",
+      title: "Unity Developer",
+      company_name: "",
       icon: unity2,
-      iconBg:"#b4c5d9",
-      date:"March 2022-April 2022",
-      points:[
-        "Designing, developing, and maintaining immersive gaming experiences using Unity3D and related technologies.",
-        "Implementing responsive and scalable game mechanics while ensuring optimal performance across different platforms.",
-        "Proficient in C# programming language and applying modern programming principles to game development.",
-        "Familiarity with 3D mathematics, physics, and graphics to create realistic and visually appealing game environments.",
-      ]
-    },
-    {
-      title:"Nepal College of Information Technology",
-      company_name:"",
-      icon:ncit,
-      iconBg:"#383E56",
-      date:"2018-2023",
-      points:[
-        "Bachelor in Computer Engineering"
+      iconBg: "#b4c5d9",
+      date: "Mar 2022 - Apr 2022",
+      points: [
+        "Designed and built immersive gameplay experiences with Unity3D and C#, applying modern programming principles.",
+        "Implemented scalable game mechanics tuned for performance across different target platforms.",
+        "Worked with 3D mathematics, physics, and graphics to create realistic and visually appealing environments.",
       ],
     },
     {
-      title:"Capital College and Research Center",
-      company_name:"",
-      icon:school,
-      iconBg:"#75c4b8",
-      date:"2014-2016",
-      points:[
-        "+2 Science Stream (Biology and Math)"
+      title: "Nepal College of Information Technology",
+      company_name: "",
+      icon: ncit,
+      iconBg: "#383E56",
+      date: "2018 - 2023",
+      points: [
+        "Bachelor of Engineering in Computer Engineering (NCIT, Batch 2018).",
       ],
     },
-    
+    {
+      title: "Capital College and Research Center",
+      company_name: "",
+      icon: school,
+      iconBg: "#75c4b8",
+      date: "2014 - 2016",
+      points: [
+        "+2 Science Stream (Biology and Math).",
+      ],
+    },
   ];
   
   const testimonials = [

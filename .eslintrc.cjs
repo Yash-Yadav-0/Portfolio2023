@@ -12,9 +12,32 @@ module.exports = {
   settings: { react: { version: '18.2' } },
   plugins: ['react-refresh'],
   rules: {
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
+    'react-refresh/only-export-components': 'off',
+    'react/no-unknown-property': [
+      'error',
+      {
+        ignore: [
+          'intensity',
+          'position',
+          'rotation',
+          'castShadow',
+          'shadow-mapSize',
+          'groundColor',
+          'object',
+          'angle',
+          'penumbra',
+          'position-y',
+          'rotation-y',
+          'args',
+          'attach',
+        ],
+      },
     ],
   },
-}
+  overrides: [
+    {
+      files: ['tailwind.config.js', 'postcss.config.js', 'vite.config.js'],
+      env: { node: true },
+    },
+  ],
+};

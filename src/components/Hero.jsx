@@ -1,4 +1,3 @@
-import React from 'react'
 import {motion} from 'framer-motion'
 import { ComputersCanvas } from './canvas'
 import { styles } from '../styles'
@@ -15,7 +14,7 @@ const Hero = () => {
           </div>
           <div>
             <h1 className={`${styles.heroHeadText} text-white`}>
-              Hi, I'm <span 
+              Hi, I&apos;m <span
                         className='bg-gradient-to-r from-red-500
                                     via-indigo-600 to-blue-500 inline-block 
                                     text-transparent bg-clip-text'>Yash</span></h1>

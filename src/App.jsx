@@ -1,5 +1,5 @@
-import { BrowserRouter as Router,Routes,Route, BrowserRouter } from "react-router-dom"
-import {About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas} from './components'
+import { BrowserRouter } from "react-router-dom"
+import {About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas} from './components'
 import { Analytics } from '@vercel/analytics/react'
 
 const App = () => {

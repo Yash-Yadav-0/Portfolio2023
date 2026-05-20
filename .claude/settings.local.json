@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(npm outdated *)",
+      "Bash(npm install *)",
+      "Bash(npm ls *)",
+      "Bash(npm update *)",
+      "Bash(curl -s http://localhost:5173/)",
+      "Bash(curl -s \"http://localhost:5173/src/components/About.jsx\")"
+    ]
+  }
+}
