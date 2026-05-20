@@ -7,7 +7,9 @@
       "Bash(npm ls *)",
       "Bash(npm update *)",
       "Bash(curl -s http://localhost:5173/)",
-      "Bash(curl -s \"http://localhost:5173/src/components/About.jsx\")"
+      "Bash(curl -s \"http://localhost:5173/src/components/About.jsx\")",
+      "Bash(npm view *)",
+      "Bash(del *)"
     ]
   }
 }
