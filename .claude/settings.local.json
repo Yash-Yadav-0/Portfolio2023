@@ -9,7 +9,16 @@
       "Bash(curl -s http://localhost:5173/)",
       "Bash(curl -s \"http://localhost:5173/src/components/About.jsx\")",
       "Bash(npm view *)",
-      "Bash(del *)"
+      "Bash(del *)",
+      "Bash(grep -oE '\\\\.vertical-timeline[^{]*\\\\{[^}]*\\\\}' /tmp/prod.css | head -20)",
+      "Read(//tmp/**)",
+      "Bash(grep -oE '\\(^|[}, ]\\)body[^a-zA-Z][^{}]*\\\\{[^}]*\\\\}' /tmp/prod.css)",
+      "Bash(grep -oE '\\\\.top-\\\\\\\\?\\\\[[^]]+\\\\\\\\?\\\\][^{]*\\\\{[^}]*\\\\}' /tmp/prod.css)",
+      "Bash(grep -oE '\\\\.top-\\\\\\\\?\\\\[120px\\\\\\\\?\\\\]\\\\{[^}]*\\\\}' /tmp/prod.css)",
+      "Bash(grep -oE '\\\\.[^,{}]*\\\\{[^}]*top:120px[^}]*\\\\}' /tmp/prod.css)",
+      "Bash(awk 'BEGIN{RS=\"}\"; ORS=\"}\\\\n\"} /\\\\.inset-0|\\\\.top-\\\\\\\\?\\\\[120px|\\\\.max-w-7xl|\\\\.mx-auto/ {print NR, $0}' /tmp/prod.css)",
+      "Bash(curl -s http://localhost:5173/ -o /tmp/local.html)",
+      "Bash(curl -s \"http://localhost:5173/src/index.css?direct\")"
     ]
   }
 }
