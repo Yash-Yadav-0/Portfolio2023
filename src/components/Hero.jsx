@@ -19,7 +19,7 @@ const Hero = () => {
                                     via-indigo-600 to-blue-500 inline-block 
                                     text-transparent bg-clip-text'>Yash</span></h1>
               <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-                Programer | Developer 
+                Programmer | Developer 
               </p>
           </div>
       </div>
