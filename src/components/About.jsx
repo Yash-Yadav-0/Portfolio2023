@@ -57,7 +57,7 @@ const CVCard = () => {
   const downloadPDF = () => {
     const link = document.createElement("a");
     link.href = cv_pdf;
-    link.download = "cv.pdf";
+    link.download = "Yash_Yadav_CV";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
