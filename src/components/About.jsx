@@ -54,13 +54,23 @@ const DownloadIcon = () => (
 );
 
 const CVCard = () => {
-  const downloadPDF = () => {
-    const link = document.createElement("a");
-    link.href = cv_pdf;
-    link.download = "Yash_Yadav_CV";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  const downloadPDF = async () => {
+    try {
+      const response = await fetch(cv_pdf);
+      const blob = await response.blob();
+      const blobUrl = URL.createObjectURL(blob);
+
+      const link = document.createElement("a");
+      link.href = blobUrl;
+      link.download = "Yash_Yadav_CV.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      URL.revokeObjectURL(blobUrl); // cleanup
+    } catch (error) {
+      console.error("Failed to download CV:", error);
+    }
   };
 
   return (
